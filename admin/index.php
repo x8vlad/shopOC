@@ -1,4 +1,5 @@
 <?php
+ini_set('display_errors', 0);
 // Version
 define('VERSION', '3.0.3.8');
 

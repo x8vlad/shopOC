@@ -328,7 +328,7 @@ class Compiler
         // Otherwise, the CSS will be rendered as-is. It can even be extended!
         $cssOnly = false;
 
-        if (substr($path, '-4') === '.css') {
+        if (substr((string)$path, '-4') === '.css') {
             $cssOnly = true;
         }
 

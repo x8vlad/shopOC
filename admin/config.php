@@ -1,18 +1,18 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'http://localhost/ja/projectPHP/shopOC/admin/');
-define('HTTP_CATALOG', 'http://localhost/ja/projectPHP/shopOC/');
+define('HTTP_SERVER', 'http://localhost/shopOC/admin/');
+define('HTTP_CATALOG', 'http://localhost/shopOC/');
 
 // HTTPS
-define('HTTPS_SERVER', 'http://localhost/ja/projectPHP/shopOC/admin/');
-define('HTTPS_CATALOG', 'http://localhost/ja/projectPHP/shopOC/');
+define('HTTPS_SERVER', 'http://localhost/shopOC/admin/');
+define('HTTPS_CATALOG', 'http://localhost/shopOC/');
 
 // DIR
-define('DIR_APPLICATION', 'C:/xampp/htdocs/ja/projectPHP/shopOC/admin/');
-define('DIR_SYSTEM', 'C:/xampp/htdocs/ja/projectPHP/shopOC/system/');
-define('DIR_IMAGE', 'C:/xampp/htdocs/ja/projectPHP/shopOC/image/');
+define('DIR_APPLICATION', 'C:/laragon/www/shopOC/admin/');
+define('DIR_SYSTEM', 'C:/laragon/www/shopOC/system/');
+define('DIR_IMAGE', 'C:/laragon/www/shopOC/image/');
 define('DIR_STORAGE', DIR_SYSTEM . 'storage/');
-define('DIR_CATALOG', 'C:/xampp/htdocs/ja/projectPHP/shopOC/catalog/');
+define('DIR_CATALOG', 'C:/laragon/www/shopOC/catalog/');
 define('DIR_LANGUAGE', DIR_APPLICATION . 'language/');
 define('DIR_TEMPLATE', DIR_APPLICATION . 'view/template/');
 define('DIR_CONFIG', DIR_SYSTEM . 'config/');

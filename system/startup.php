@@ -1,6 +1,8 @@
 <?php
-// Error Reporting
 error_reporting(E_ALL);
+ini_set('display_errors', 1);
+// Error Reporting
+error_reporting(E_ALL & ~E_DEPRECATED & ~E_STRICT & ~E_NOTICE);
 
 // Check Version
 if (version_compare(phpversion(), '7.3.0', '<') == true) {
