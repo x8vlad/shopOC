@@ -1,9 +1,9 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'http://localhost/shopOC/');
+define('HTTP_SERVER', 'http://shopoc.test:8080/');
 
 // HTTPS
-define('HTTPS_SERVER', 'http://localhost/shopOC/');
+define('HTTPS_SERVER', 'http://shopoc.test:8080/');
 
 // DIR
 define('DIR_APPLICATION', 'C:/laragon/www/shopOC/catalog/');
