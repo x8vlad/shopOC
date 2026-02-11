@@ -8,6 +8,7 @@ class ControllerCommonMenu extends Controller {
 
 		$this->load->model('catalog/product');
 
+        //this is arr categories
 		$data['categories'] = array();
 
 		$categories = $this->model_catalog_category->getCategories(0);
