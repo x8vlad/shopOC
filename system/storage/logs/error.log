@@ -1,0 +1,55 @@
+2026-03-07 15:44:22 - PHP Warning:  Use of undefined constant post - assumed 'post' (this will throw an Error in a future version of PHP) in C:\laragon\www\shopOC\catalog\controller\information\contact.php on line 169
+2026-03-07 16:13:27 - PHP Warning:  A non-numeric value encountered in C:\laragon\www\shopOC\catalog\controller\information\contact.php on line 175
+2026-03-07 16:14:16 - PHP Warning:  A non-numeric value encountered in C:\laragon\www\shopOC\catalog\controller\information\contact.php on line 179
+2026-03-07 16:14:44 - PHP Warning:  A non-numeric value encountered in C:\laragon\www\shopOC\catalog\controller\information\contact.php on line 179
+2026-03-07 16:14:44 - PHP Warning:  A non-numeric value encountered in C:\laragon\www\shopOC\catalog\controller\information\contact.php on line 179
+2026-03-07 16:14:44 - PHP Warning:  A non-numeric value encountered in C:\laragon\www\shopOC\catalog\controller\information\contact.php on line 179
+2026-03-07 16:14:45 - PHP Warning:  A non-numeric value encountered in C:\laragon\www\shopOC\catalog\controller\information\contact.php on line 179
+2026-03-07 16:17:19 - PHP Notice:  Array to string conversion in C:\laragon\www\shopOC\catalog\controller\information\contact.php on line 179
+2026-03-07 16:18:51 - PHP Notice:  Array to string conversion in C:\laragon\www\shopOC\catalog\controller\information\contact.php on line 180
+2026-03-07 16:34:06 - PHP Notice:  Undefined index: user in C:\laragon\www\shopOC\catalog\controller\information\contact.php on line 182
+2026-03-07 16:46:08 - PHP Notice:  Undefined index: user in C:\laragon\www\shopOC\catalog\controller\information\contact.php on line 15
+2026-03-07 16:46:08 - PHP Notice:  Undefined index: user in C:\laragon\www\shopOC\catalog\controller\information\contact.php on line 15
+2026-03-07 16:46:09 - PHP Notice:  Undefined index: user in C:\laragon\www\shopOC\catalog\controller\information\contact.php on line 15
+2026-03-07 16:46:09 - PHP Notice:  Undefined index: user in C:\laragon\www\shopOC\catalog\controller\information\contact.php on line 15
+2026-03-07 16:46:09 - PHP Notice:  Undefined index: user in C:\laragon\www\shopOC\catalog\controller\information\contact.php on line 15
+2026-03-07 16:46:09 - PHP Notice:  Undefined index: user in C:\laragon\www\shopOC\catalog\controller\information\contact.php on line 15
+2026-03-07 16:48:31 - PHP Notice:  Undefined index: user in C:\laragon\www\shopOC\catalog\controller\information\contact.php on line 16
+2026-03-07 16:48:31 - PHP Notice:  Undefined index: user in C:\laragon\www\shopOC\catalog\controller\information\contact.php on line 19
+2026-03-07 16:55:52 - PHP Notice:  Undefined index: user in C:\laragon\www\shopOC\catalog\controller\information\contact.php on line 16
+2026-03-07 16:55:52 - PHP Notice:  Undefined index: user in C:\laragon\www\shopOC\catalog\controller\information\contact.php on line 19
+2026-03-07 16:59:11 - PHP Notice:  Undefined index: user in C:\laragon\www\shopOC\catalog\controller\information\contact.php on line 16
+2026-03-07 16:59:11 - PHP Notice:  Undefined index: user in C:\laragon\www\shopOC\catalog\controller\information\contact.php on line 19
+2026-03-08 13:12:25 - PHP Notice:  Undefined index: user in C:\laragon\www\shopOC\catalog\controller\information\contact.php on line 16
+2026-03-08 13:12:25 - PHP Notice:  Undefined index: user in C:\laragon\www\shopOC\catalog\controller\information\contact.php on line 19
+2026-03-08 13:12:36 - PHP Notice:  Undefined index: user in C:\laragon\www\shopOC\catalog\controller\information\contact.php on line 16
+2026-03-08 13:12:36 - PHP Notice:  Undefined index: user in C:\laragon\www\shopOC\catalog\controller\information\contact.php on line 19
+2026-03-08 13:15:03 - PHP Notice:  Undefined index: user in C:\laragon\www\shopOC\catalog\controller\information\contact.php on line 20
+2026-03-08 13:15:03 - PHP Notice:  Undefined index: user in C:\laragon\www\shopOC\catalog\controller\information\contact.php on line 23
+2026-03-08 13:15:16 - PHP Notice:  Undefined index: user in C:\laragon\www\shopOC\catalog\controller\information\contact.php on line 20
+2026-03-08 13:15:16 - PHP Notice:  Undefined index: user in C:\laragon\www\shopOC\catalog\controller\information\contact.php on line 23
+2026-03-08 16:54:14 - PHP Notice:  Undefined index: dept in C:\laragon\www\shopOC\catalog\controller\information\contact.php on line 178
+2026-03-08 16:54:19 - PHP Notice:  Undefined index: deph in C:\laragon\www\shopOC\catalog\controller\information\contact.php on line 178
+2026-03-08 16:58:33 - PHP Notice:  Undefined index: dept in C:\laragon\www\shopOC\catalog\controller\information\contact.php on line 180
+2026-03-08 16:58:34 - PHP Notice:  Undefined index: dept in C:\laragon\www\shopOC\catalog\controller\information\contact.php on line 180
+2026-03-08 16:58:35 - PHP Notice:  Undefined index: dept in C:\laragon\www\shopOC\catalog\controller\information\contact.php on line 180
+2026-03-08 16:58:45 - PHP Notice:  Undefined index: dept in C:\laragon\www\shopOC\catalog\controller\information\contact.php on line 180
+2026-03-08 17:48:50 - PHP Notice:  Undefined index: heading_title in C:\laragon\www\shopOC\catalog\controller\information\contact.php on line 150
+2026-03-08 17:51:52 - PHP Notice:  Undefined index: text in C:\laragon\www\shopOC\catalog\controller\information\contact.php on line 150
+2026-03-09 13:12:53 - PHP Warning:  Use of undefined constant a - assumed 'a' (this will throw an Error in a future version of PHP) in C:\laragon\www\shopOC\catalog\controller\information\contact.php on line 198
+2026-03-09 13:12:53 - PHP Warning:  Use of undefined constant b - assumed 'b' (this will throw an Error in a future version of PHP) in C:\laragon\www\shopOC\catalog\controller\information\contact.php on line 198
+2026-03-09 13:12:53 - PHP Notice:  Undefined index: promo in C:\laragon\www\shopOC\catalog\controller\information\contact.php on line 199
+2026-03-09 13:12:59 - PHP Warning:  Use of undefined constant a - assumed 'a' (this will throw an Error in a future version of PHP) in C:\laragon\www\shopOC\catalog\controller\information\contact.php on line 198
+2026-03-09 13:12:59 - PHP Warning:  Use of undefined constant b - assumed 'b' (this will throw an Error in a future version of PHP) in C:\laragon\www\shopOC\catalog\controller\information\contact.php on line 198
+2026-03-09 13:12:59 - PHP Notice:  Undefined index: promo in C:\laragon\www\shopOC\catalog\controller\information\contact.php on line 199
+2026-03-09 13:13:01 - PHP Warning:  Use of undefined constant a - assumed 'a' (this will throw an Error in a future version of PHP) in C:\laragon\www\shopOC\catalog\controller\information\contact.php on line 198
+2026-03-09 13:13:01 - PHP Warning:  Use of undefined constant b - assumed 'b' (this will throw an Error in a future version of PHP) in C:\laragon\www\shopOC\catalog\controller\information\contact.php on line 198
+2026-03-09 13:13:01 - PHP Notice:  Undefined index: promo in C:\laragon\www\shopOC\catalog\controller\information\contact.php on line 199
+2026-03-09 13:13:12 - PHP Warning:  Use of undefined constant a - assumed 'a' (this will throw an Error in a future version of PHP) in C:\laragon\www\shopOC\catalog\controller\information\contact.php on line 198
+2026-03-09 13:13:12 - PHP Warning:  Use of undefined constant b - assumed 'b' (this will throw an Error in a future version of PHP) in C:\laragon\www\shopOC\catalog\controller\information\contact.php on line 198
+2026-03-09 13:13:12 - PHP Notice:  Undefined index: promo in C:\laragon\www\shopOC\catalog\controller\information\contact.php on line 199
+2026-03-09 13:13:24 - PHP Notice:  Undefined index: promo in C:\laragon\www\shopOC\catalog\controller\information\contact.php on line 199
+2026-03-09 13:14:51 - PHP Notice:  Undefined index: promo in C:\laragon\www\shopOC\catalog\controller\information\contact.php on line 199
+2026-03-09 13:14:53 - PHP Notice:  Undefined index: promo in C:\laragon\www\shopOC\catalog\controller\information\contact.php on line 199
+2026-03-09 13:14:54 - PHP Notice:  Undefined index: promo in C:\laragon\www\shopOC\catalog\controller\information\contact.php on line 199
+2026-03-09 13:14:57 - PHP Notice:  Undefined index: promo in C:\laragon\www\shopOC\catalog\controller\information\contact.php on line 199

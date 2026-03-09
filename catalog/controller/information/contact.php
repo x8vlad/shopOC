@@ -3,6 +3,19 @@ class ControllerInformationContact extends Controller {
 	private $error = array();
 
 	public function index() {
+
+        $promo = $this->statusPromo();
+
+        if($promo){
+            //echo 34;
+//             echo "<pre>";
+//                 var_dump($promo);
+//                 die();
+//             echo "</pre>";
+            $data['show_promo_field'] = $promo['is_show'];
+            $data['heading_title'] = $promo['title'];
+        }
+
 		$this->load->language('information/contact');
 
 		$this->document->setTitle($this->language->get('heading_title'));
@@ -59,8 +72,11 @@ class ControllerInformationContact extends Controller {
 
 		$data['button_submit'] = $this->language->get('button_submit');
 
-		$data['action'] = $this->url->link('information/contact', '', true);
-
+        if(isset($this->request->get['promo'])){
+		    $data['action'] = $this->url->link('information/contact', 'promo=' . $this->request->get['promo'], true);
+        }else{
+            $data['action'] = $this->url->link('information/contact', '', true);
+        }
 		$this->load->model('tool/image');
 
 		if ($this->config->get('config_image')) {
@@ -118,6 +134,18 @@ class ControllerInformationContact extends Controller {
 			$data['email'] = $this->customer->getEmail();
 		}
 
+        if (isset($this->error['promo'])) {
+            $data['error_promo'] = $this->error['promo'];
+        } else {
+            $data['error_promo'] = '';
+        }
+
+        if(isset($this->request->post['promo'])){
+            $data['promo'] = $this->request->post['promo'];
+        }else{
+            $data['promo'] = '';
+        }
+
 		if (isset($this->request->post['enquiry'])) {
 			$data['enquiry'] = $this->request->post['enquiry'];
 		} else {
@@ -136,10 +164,30 @@ class ControllerInformationContact extends Controller {
 		$data['content_top'] = $this->load->controller('common/content_top');
 		$data['content_bottom'] = $this->load->controller('common/content_bottom');
 		$data['footer'] = $this->load->controller('common/footer');
+
 		$data['header'] = $this->load->controller('common/header');
 
-		$this->response->setOutput($this->load->view('information/contact', $data));
+		//         var_dump($this->request->get);
+
+        $this->response->setOutput($this->load->view('information/contact', $data));
 	}
+
+    // end of index method
+
+    protected function statusPromo(){
+        $arr_promo = [];
+        if(isset($this->request->get['promo']) && $this->request->get['promo'] == "promocode"){
+//             $data['show_promo_field'] = true;
+//             $data['heading_title'] = ;
+
+            // change to assaciave arr
+            $arr_promo = [
+               'is_show' => true,
+               'title' => "U a using the promo-code"
+            ];
+            return $arr_promo;
+        }
+    }
 
 	protected function validate() {
 		if ((utf8_strlen($this->request->post['name']) < 3) || (utf8_strlen($this->request->post['name']) > 32)) {
@@ -162,6 +210,18 @@ class ControllerInformationContact extends Controller {
 				$this->error['captcha'] = $captcha;
 			}
 		}
+//         if(a>b){}
+        if ((utf8_strlen($this->request->post['promo']) < 3) || (utf8_strlen($this->request->post['promo']) > 10)) {
+            $this->error['promo'] = "Ivalid promo too short or too long";
+
+//             $this->error['error_promo'] = true;
+//             $this->error['error_promo_text'] = "Invalid promocode, too short or long";
+        }
+
+        if($this->request->post['enquiry'] == "secret texts"){
+            $this->error['enquiry'] = "How u get the secret texts";
+        }
+
 
 		return !$this->error;
 	}
@@ -183,7 +243,7 @@ class ControllerInformationContact extends Controller {
 			'href' => $this->url->link('information/contact')
 		);
 
- 		$data['text_message'] = $this->language->get('text_message'); 
+ 		$data['text_message'] = $this->language->get('text_message');
 
 		$data['continue'] = $this->url->link('common/home');
 
