@@ -1,24 +1,22 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'http://shopoc.test:8080/');
-
-// HTTPS
-define('HTTPS_SERVER', 'http://shopoc.test:8080/');
+define('HTTP_SERVER', 'http://shopOC:80/');
+define('HTTPS_SERVER', 'http://shopOC:80/');
 
 // DIR
-define('DIR_APPLICATION', 'C:/laragon/www/shopOC/catalog/');
-define('DIR_SYSTEM', 'C:/laragon/www/shopOC/system/');
-define('DIR_IMAGE', 'C:/laragon/www/shopOC/image/');
-define('DIR_STORAGE', DIR_SYSTEM . 'storage/');
-define('DIR_LANGUAGE', DIR_APPLICATION . 'language/');
-define('DIR_TEMPLATE', DIR_APPLICATION . 'view/theme/');
-define('DIR_CONFIG', DIR_SYSTEM . 'config/');
-define('DIR_CACHE', DIR_STORAGE . 'cache/');
-define('DIR_DOWNLOAD', DIR_STORAGE . 'download/');
-define('DIR_LOGS', DIR_STORAGE . 'logs/');
-define('DIR_MODIFICATION', DIR_STORAGE . 'modification/');
-define('DIR_SESSION', DIR_STORAGE . 'session/');
-define('DIR_UPLOAD', DIR_STORAGE . 'upload/');
+define('DIR_APPLICATION', 'C:/OSPanel/domains/shopOC/catalog/');
+define('DIR_SYSTEM', 'C:/OSPanel/domains/shopOC/system/');
+define('DIR_IMAGE', 'C:/OSPanel/domains/shopOC/image/');
+define('DIR_STORAGE', 'C:/OSPanel/domains/shopOC/system/storage/');
+define('DIR_LANGUAGE', 'C:/OSPanel/domains/shopOC/catalog/language/');
+define('DIR_TEMPLATE', 'C:/OSPanel/domains/shopOC/catalog/view/theme/');
+define('DIR_CONFIG', 'C:/OSPanel/domains/shopOC/system/config/');
+define('DIR_CACHE', 'C:/OSPanel/domains/shopOC/system/storage/cache/');
+define('DIR_DOWNLOAD', 'C:/OSPanel/domains/shopOC/system/storage/download/');
+define('DIR_LOGS', 'C:/OSPanel/domains/shopOC/system/storage/logs/');
+define('DIR_MODIFICATION', 'C:/OSPanel/domains/shopOC/system/storage/modification/');
+define('DIR_SESSION', 'C:/OSPanel/domains/shopOC/system/storage/session/');
+define('DIR_UPLOAD', 'C:/OSPanel/domains/shopOC/system/storage/upload/');
 
 // DB
 define('DB_DRIVER', 'mysqli');

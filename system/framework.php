@@ -1,7 +1,6 @@
 <?php
 // Registry
 $registry = new Registry();
-
 // Config
 $config = new Config();
 $config->load('default');
@@ -68,7 +67,6 @@ $registry->set('load', $loader);
 
 // Request
 $registry->set('request', new Request());
-
 // Response
 $response = new Response();
 $response->addHeader('Content-Type: text/html; charset=utf-8');
@@ -115,9 +113,10 @@ if ($config->get('session_autostart')) {
 // Cache
 $registry->set('cache', new Cache($config->get('cache_engine'), $config->get('cache_expire')));
 
-// Url
+// Url !!
 if ($config->get('url_autostart')) {
 	$registry->set('url', new Url($config->get('site_url'), $config->get('site_ssl')));
+
 }
 
 // Language
@@ -157,7 +156,9 @@ if ($config->has('model_autoload')) {
 
 // Route
 $route = new Router($registry);
-
+//echo "<pre>";
+//    var_dump($route);
+//echo "<pre>";
 // Pre Actions
 if ($config->has('action_pre_action')) {
 	foreach ($config->get('action_pre_action') as $value) {

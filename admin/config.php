@@ -1,18 +1,18 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'http://shopoc.test:8080/admin/');
-define('HTTP_CATALOG', 'http://shopoc.test:8080/');
+define('HTTP_SERVER', 'http://shopOC:80/admin/');
+define('HTTP_CATALOG', 'http://shopOC:80/');
 
 // HTTPS
-define('HTTPS_SERVER', 'http://shopoc.test:8080/admin/');
-define('HTTPS_CATALOG', 'http://shopoc.test:8080/');
+define('HTTPS_SERVER', 'http://shopOC:80/admin/');
+define('HTTPS_CATALOG', 'http://shopOC:80/');
 
 // DIR
-define('DIR_APPLICATION', 'C:/laragon/www/shopOC/admin/');
-define('DIR_SYSTEM', 'C:/laragon/www/shopOC/system/');
-define('DIR_IMAGE', 'C:/laragon/www/shopOC/image/');
-define('DIR_STORAGE', DIR_SYSTEM . 'storage/');
-define('DIR_CATALOG', 'C:/laragon/www/shopOC/catalog/');
+define('DIR_APPLICATION', 'C:/OSPanel/domains/shopOC/admin/');
+define('DIR_SYSTEM', 'C:/OSPanel/domains/shopOC/system/');
+define('DIR_IMAGE', 'C:/OSPanel/domains/shopOC/image/');
+define('DIR_STORAGE', 'C:/OSPanel/domains/shopOC/system/storage/');
+define('DIR_CATALOG', 'C:/OSPanel/domains/shopOC/catalog/');
 define('DIR_LANGUAGE', DIR_APPLICATION . 'language/');
 define('DIR_TEMPLATE', DIR_APPLICATION . 'view/template/');
 define('DIR_CONFIG', DIR_SYSTEM . 'config/');

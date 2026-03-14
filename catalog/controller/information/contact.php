@@ -4,18 +4,6 @@ class ControllerInformationContact extends Controller {
 
 	public function index() {
 
-        $promo = $this->statusPromo();
-
-        if($promo){
-            //echo 34;
-//             echo "<pre>";
-//                 var_dump($promo);
-//                 die();
-//             echo "</pre>";
-            $data['show_promo_field'] = $promo['is_show'];
-            $data['heading_title'] = $promo['title'];
-        }
-
 		$this->load->language('information/contact');
 
 		$this->document->setTitle($this->language->get('heading_title'));
@@ -167,27 +155,27 @@ class ControllerInformationContact extends Controller {
 
 		$data['header'] = $this->load->controller('common/header');
 
-		//         var_dump($this->request->get);
 
-        $this->response->setOutput($this->load->view('information/contact', $data));
+//         var_dump($this->request->get);
+        //echo "<pre>";
+//         var_dump($data['breadcrumbs']);
+        //echo "</pre>";
+//         var/_dump($data['breadcrumbs'][0]["href"]);
+//         die();
+        // href: "http://shopOC:80/index.php?route=common/home"
+        if($this->isPromoValid()){
+
+              $data['breadcrumbs'][0]["href"] = $this->url->link('product/category', 'path=20');
+
+              $data['breadcrumbs'][] = array(
+                  'text' => 'Gift',
+                  'href' => $this->url->link('information/contact', 'promo=' . $this->request->get['promo'])
+              );
+         }
+    $this->response->setOutput($this->load->view('information/contact', $data));
 	}
 
     // end of index method
-
-    protected function statusPromo(){
-        $arr_promo = [];
-        if(isset($this->request->get['promo']) && $this->request->get['promo'] == "promocode"){
-//             $data['show_promo_field'] = true;
-//             $data['heading_title'] = ;
-
-            // change to assaciave arr
-            $arr_promo = [
-               'is_show' => true,
-               'title' => "U a using the promo-code"
-            ];
-            return $arr_promo;
-        }
-    }
 
 	protected function validate() {
 		if ((utf8_strlen($this->request->post['name']) < 3) || (utf8_strlen($this->request->post['name']) > 32)) {
@@ -213,7 +201,6 @@ class ControllerInformationContact extends Controller {
 //         if(a>b){}
         if ((utf8_strlen($this->request->post['promo']) < 3) || (utf8_strlen($this->request->post['promo']) > 10)) {
             $this->error['promo'] = "Ivalid promo too short or too long";
-
 //             $this->error['error_promo'] = true;
 //             $this->error['error_promo_text'] = "Invalid promocode, too short or long";
         }
@@ -225,6 +212,22 @@ class ControllerInformationContact extends Controller {
 
 		return !$this->error;
 	}
+
+    protected function isPromoValid(){
+       if(!isset($this->request->get['promo'])){
+            return false;
+       }
+
+       // here load model by load method(open cart method)
+       $this->load->model("extension/total/promocode");
+
+       $promo_info = $this->model_extension_total_promocode->getPromo($this->request->get['promo']);
+
+       if($promo_info){
+            return true;
+       }else{//die();
+       }
+    }
 
 	public function success() {
 		$this->load->language('information/contact');
@@ -255,5 +258,7 @@ class ControllerInformationContact extends Controller {
 		$data['header'] = $this->load->controller('common/header');
 
 		$this->response->setOutput($this->load->view('common/success', $data));
+
+
 	}
 }
